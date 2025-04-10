@@ -1,0 +1,22 @@
+name = "transparent-proxy"
+main = "src/index.js"
+compatibility_date = "2023-09-04"
+usage_model = "bundled"
+env = { }
+
+[[r2_buckets]]
+binding = "R2_BUCKET"
+bucket_name = "edge-storage-r2"
+preview_bucket_name = "edge-storage-r2-preview"
+
+[[kv_namespaces]]
+binding = "CONFIG_KV"
+id = "ac1002d9b03e491fa7cc19738a579396"
+preview_id = "ac1002d9b03e491fa7cc19738a579396"
+
+[[queues.producers]]
+binding = "SYNC_QUEUE"
+queue = "sync-queue"
+
+[triggers]
+crons = [] 
