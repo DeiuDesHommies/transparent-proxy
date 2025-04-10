@@ -1,4 +1,4 @@
-name = "transparent-proxy"
+name = "transparent-proxy-1"
 main = "src/index.js"
 compatibility_date = "2023-09-04"
 usage_model = "bundled"
